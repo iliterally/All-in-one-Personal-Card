@@ -1,0 +1,204 @@
+<%- include('partials/header') %>
+
+<style>
+  body {
+    margin: 0 0 3rem 0;
+    background-image: linear-gradient(to bottom, #f1f6f9, #9ba4b5);
+    font-family: cursive;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9ba4b5;
+    margin-top: 0px;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-top: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .navbar-brand:hover {
+    color: #fff;
+  }
+
+  .navbar-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    padding: 0 15px 0 15px;
+  }
+
+  .navbar-link:hover {
+    color: #fff;
+  }
+
+  .navbar-right {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .welcome {
+    padding: 1rem 0 3rem 0;
+    margin-bottom: 0;
+  }
+
+  .card {
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    transition: 0.3s ease-in-out;
+    margin: 0 auto;
+    margin-top: 5.5rem;
+    background-image: linear-gradient(to bottom, #394867, #212a3e);
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    font-family: cursive;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+
+  .btn-primary:hover {
+    background-color: #0060c0;
+    border-color: #0060c0;
+    color: #fff;
+  }
+
+  .btn-secondary {
+    background-color: rgb(28, 192, 28);
+    color: #fff;
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+
+  .btn-secondary:hover {
+    background-color: #3a943a;
+  }
+
+  .logo {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 10rem;
+    margin-bottom: 2rem;
+  }
+</style>
+
+<div class="navbar">
+  <div class="navbar-logo">
+    <img
+      style="position: relative; bottom: 5px"
+      src="/photos/logo.png"
+      alt="Logo"
+    />
+    <h3 style="font-weight: bold; cursor: pointer; font-family: cursive">
+      All In One Card
+    </h3>
+  </div>
+
+  <div class="navbar-right">
+    <a
+      style="text-decoration: none; font-family: cursive"
+      href="/contact"
+      class="navbar-link"
+      >Contact</a
+    >
+    <a
+      style="text-decoration: none; font-family: cursive"
+      href="/About"
+      class="navbar-link"
+      >About</a
+    >
+  </div>
+</div>
+
+<div class="welcome">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="/photos/logo.png" alt="Your logo or photo" class="logo" />
+            <h1 class="card-title">Welcome!</h1>
+            <p class="card-text">
+              "Create an account with us and we'll provide you with a custom
+              card for all your transactions and daily tasks."
+            </p>
+            <div class="d-flex justify-content-center">
+              <button
+                class="btn btn-primary mr-3"
+                onclick="location.href='/login';"
+              >
+                Login
+              </button>
+              <button
+                class="btn btn-secondary"
+                onclick="location.href='/register';"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

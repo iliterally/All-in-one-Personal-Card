@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <title>Account Created</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        margin-bottom: 25rem;
+        background-image: linear-gradient(to bottom, #f1f6f9, #9ba4b5);
+        font-family: cursive;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #9ba4b5;
+        margin-top: 0px;
+        padding: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        margin-top: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+
+      .navbar-logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-logo img {
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+      }
+
+      .navbar-brand:hover {
+        color: #fff;
+      }
+
+      .navbar-link {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .navbar-link:hover {
+        color: greenyellow;
+      }
+
+      .navbar-right {
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      h1{
+        color: #fff;
+      }
+      .card {
+        width: 50%;
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+        transition: 0.3s ease-in-out;
+        margin: 20px auto;
+        margin-top: 40px;
+        background-image: linear-gradient(to bottom, #394867, #212A3E);
+        padding: 4rem 40px 2rem 40px;
+      }
+
+      h1 {
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+
+      button:hover {
+        background-color: #0069d9;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .btn {
+        font-size: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img
+          style="position: relative; bottom: 5px"
+          src="/photos/logo.png"
+          alt="Logo"
+        />
+        <h3 style="font-weight: bold; cursor: pointer">All In One Card</h3>
+      </div>
+
+      <div class="navbar-right">
+        <a style="text-decoration: none" href="/About" class="navbar-link"
+          >About</a
+        >
+      </div>
+    </div>
+    <div class="card">
+      <h1>Account Successfully Created!</h1>
+      <button class="btn btn-primary btn-block">
+        <a style="text-decoration: none; color: #fff" href="/login">Login</a>
+      </button>
+    </div>
+  </body>
+</html>

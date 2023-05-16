@@ -1,0 +1,176 @@
+<%- include('partials/header') %>
+
+<style>
+  body {
+    margin: 0 0 10px 0;
+    background-image: linear-gradient(to bottom, #f1f6f9, #9ba4b5);
+    font-family: cursive;
+    color: #fff;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9ba4b5;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .navbar.hidden {
+    top: -100px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .navbar-brand:hover {
+    color: #fff;
+  }
+
+  .navbar-right {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #212A3E;
+    padding: 0 15px 0 15px;
+  }
+
+  .navbar-link:hover {
+    color: #fff;
+  }
+
+  .abUs {
+    font-size: 24px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #9ba4b5;
+    font-weight: 550;
+    margin: 20px 20px 25px 0;
+    color: black;
+  }
+
+  .card {
+    width: 70%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    transition: 0.3s ease-in-out;
+    background-color: #fff;
+    padding: 0 20px 20px 20px;
+    margin: 20px auto;
+    margin-top: 7rem;
+    background-image: linear-gradient(to bottom, #394867, #212a3e);
+  }
+
+  .col-sm-6 {
+    padding: 20px;
+  }
+
+  .About {
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .AboutUs {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .img-about {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+</style>
+
+<div class="navbar">
+  <div class="navbar-logo">
+    <img
+      style="position: relative; bottom: 5px"
+      src="/photos/logo.png"
+      alt="Logo"
+    />
+    <h3 style="font-weight: bold; cursor: pointer; color: black">
+      All In One Card
+    </h3>
+  </div>
+
+  <div class="navbar-right">
+    <a
+      style="text-decoration: none; font-family: cursive"
+      href="/contact"
+      class="navbar-link"
+      >Contact</a
+    >
+    <a style="text-decoration: none" href="/" class="navbar-link">Home</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="row">
+    <div class="col-sm-12 AboutUs">
+      <div class="abUs">About Us</div>
+      Welcome to our platform! We are a team of fourth-grade university students
+      dedicated to revolutionizing transaction management and simplifying daily
+      tasks. Our personalized card is designed to streamline your transactions
+      and provide valuable insights into your financial habits. With a focus on
+      security and privacy, we prioritize protecting your data.<br /><br />
+      Join us on this journey to transform the way you handle your day-to-day
+      activities. <br />
+      Sincerely, <br />
+      The Fourth-Grade University Students
+      <hr />
+    </div>
+    <div class="col-sm-6 About">
+      Nabaz Esmail Muhammad <br />
+      <img class="img-about" src="photos/nabaz.jpg" alt="nabaz's photo" />
+    </div>
+    <div class="col-sm-6 About">
+      Pairaw Azad Jalal <br />
+      <img class="img-about" src="photos/pairaw.jpg" alt="pairaw's photo" />
+    </div>
+    <div class="col-sm-6 About">
+      Muhammad Dlashd Omer <br />
+      <img class="img-about" src="photos/hama.jpg" alt="hama's photo" />
+    </div>
+    <div class="col-sm-6 About">
+      Esmail Mustafa Hamamurad <br />
+      <img class="img-about" src="photos/esmail.jpg" alt="esmail's photo" />
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
