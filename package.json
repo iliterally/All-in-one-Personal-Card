@@ -1,4 +1,14 @@
 {
+  "name": "all-in-one-personal-card",
+  "version": "1.0.0",
+  "description": "Your app description",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "bcrypt-nodejs": "^0.0.3",
