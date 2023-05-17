@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": ["hey"],
+  "keywords": [],
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
